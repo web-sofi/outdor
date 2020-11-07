@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+}
+.col-3{
+    width: 33.33%;
+    padding: 8px;
+}
+a, a:hover{
+    text-decoration: none;
+}
+
+/*Header Scection CSS*/
+
+.header-section{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/img-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.header-section .logo{
+    width: 15%;
+    color: #fff;
+    margin-top: 20px;
+}
+.header-section .logo h1{
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.header-section .logo h3{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 15px;
+}
+.hero-area .line{
+    margin: 16px auto;
+    background: red;
+    width: 7%;
+    height: 1px;
+}
+nav{
+    display: flex;
+    width: 85%;
+    flex:0 0 auto;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li .btn{
+    padding: 6px 15px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+nav ul li .btn:hover{
+
+background: #ec0a0a;
+
+border: 2px solid #ec0a0a;
+
+transition-duration: 0.3s;
+}
+nav ul li a{
+    margin: 0 10px;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hero-area{
+    text-align: center;
+    color: #fff;
+    margin-top: 15%;
+    padding-bottom: 15%;
+}
+.hero-area h5{
+    font-weight: 400;
+    font-size: 23px;
+    font-style: italic;
+}
+.hero-area span{
+    height: 11px;
+    width: 24px;
+    color: white;
+    display: block;
+}
+.hero-area h1{
+    font-weight: 800;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.hero-area .header-btn{
+    border: 1px solid #ec0a0a;
+    background: #ec0a0a;
+    padding: 10px 22px;
+    border-radius: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hero-area .header-btn:hover{
+
+border: 1px solid #ec0a0a;
+
+color: #ec0a0a;
+
+background: transparent;
+}
+
+/*Test Section CSS*/
+.test{
+    text-align: center;
+    background: #F4F5F9;
+    padding: 50px 0;
+}
+.test h3{
+    color: #606274;
+    font-size: 23px;
+    font-weight: 500;
+    font-style: italic;
+}
+.test h4{
+    color: #8C94B5;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+
+
+/*Event Section CSS*/
+
+.event{
+    padding: 70px 0 50px;
+    background: #FFFFFF;
+}
+.event .text{
+    margin-bottom: 40px;
+}
+.event .line{
+    margin: 10px auto;
+    background: red;
+    width: 14%;
+    height: 3px;
+}
+.event .text h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.event-content {
+    width: 50%;
+}
+.event-content .event-img{
+}
+.event-content .event-img img{
+    width: 84%;
+    box-shadow: 10px 10px 2px 6px #EDEDED;
+}
+.event-content .event-text{
+    text-align: center;
+    margin: 40px 0px;
+}
+.event-content .event-text h3{
+    color: #222222;
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.event-content .event-text p{
+    color: #362677;
+    padding: 15px 58px;
+}
+.event-content .event-btn{
+    color: #f11d1d;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    display: inline-block;
+    border: 2px solid #f11d1d;
+    padding: 3px 20px;
+    border-radius: 30px;
+}
+.event-content .event-btn:hover{
+
+background: #ec0a0a;
+
+border: 2px solid #ec0a0a;
+
+color: #fff;
+
+transition-duration: 0.3s;
+}
+.event-content .event-btn i{
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+/*Explore Area CSS*/
+
+.explore{
+    text-align: center;
+    justify-content: flex-end;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/img-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 10%;
+}
+.explore .explore-text{color: #fff;padding-top: 12%;}
+.explore .explore-text h1{
+    font-size: 62px;
+    font-weight: 500;
+    line-height: 62px;
+    margin: 30px 0;
+}
+.explore .explore-text span{}
+.explore .explore-text p{}
+.explore .explore-text .explore-btn{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-top: 30px;
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 2px 20px;
+    border-radius: 30px;
+}
+.explore .explore-text .explore-btn:hover{
+
+background: #ec0a0a;
+
+border: 2px solid #ec0a0a;
+
+transition-duration: 0.3s;
+}
+.explore .explore-text .line{}
+.explore .explore-text .explore-btn i{
+    font-size: 37px;
+    vertical-align: middle;
+}
+
+ /*Tours Section CSS*/
+ .tours{
+    padding: 50px 0;
+}
+ .tours-inner{
+}
+.tours .line{
+    background: red;
+    width: 23%;
+    height: 3px;
+    margin-bottom: 15px;
+}
+ .tours-inner h1{
+    font-size: 41px;
+    font-weight: 800;
+    line-height: 60px;
+    text-transform: uppercase;
+    line-height: 49px;
+}
+ .tours-inner span{}
+ .tours-inner p{
+ 	font-size: 15px;
+ 	text-align: justify;
+ 	padding-right: 15px;
+ }
+ .tours-inner .tours-btn{
+    border: 1px solid #ec0a0a;
+    background: #ec0a0a;
+    padding: 10px 22px;
+    border-radius: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.tours-inner .tours-btn:hover{
+    border: 1px solid #ec0a0a;
+    color: #ec0a0a;
+    transition-duration: 0.3s;
+    background: transparent;
+}
+
+ .middle-img{}
+ .middle-img .img-1{
+    width: 100%;
+    padding: 10px 0px;
+}
+ .middle-img .img-2{
+    width: 100%;
+}
+ .right-img{}
+ .right-img .img-3{
+    width: 100%;
+    padding: 10px 0px;
+}
+ .right-img .img-4{
+    width: 100%;
+}
+
+ /*Footer Section CSS*/
+
+ footer {
+    background: #191919;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+}
+ footer p{
+    font-size: 14px;
+    font-weight: 500;
+}
+ footer p span{}
+ footer .coprright{
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+/*Responsive CSS Here*/
+@media (max-width: 1399px) {
+    .container{
+           max-width: 1150px;
+    		margin: auto;
+    	}
+    
+  }
+
+@media (max-width: 1199px) {
+    	.container{
+            max-width: 1035px;
+    		margin: auto;
+    	}
+	    .tours-inner h1 {
+    		font-size: 36px;
+    	}
+    	.tours-inner p {
+
+		    padding-right: 20px;
+		}
+  }
+  
+   @media  (max-width: 991px) {
+    
+    .container{
+            max-width: 860px;
+    		margin: auto;
+    	}
+    	.explore .explore-text h1 {
+    		font-size: 55px;
+		}
+		.explore .explore-text p {
+		padding: 0 27%;
+		}
+	    .tours-inner h1 {
+    		font-size: 29px;
+    		line-height: 33px;
+    	}
+    	.tours-inner p {
+
+		    padding-right: 20px;
+		}
+    
+  }
+  
+  @media  (max-width: 767px) {
+    .container{
+            max-width: 650px;
+    		margin: auto;
+    	}
+	.header-section .logo h1 {
+    	font-size: 17px;
+	}
+    .header-section .logo h3 {
+    	font-size: 10px;
+    }
+    nav ul li a {
+	    margin: 0 7px;
+	    font-size: 15px;
+	}
+	.hero-area h1 {
+	    font-size: 35px;
+	}
+    .event-content .event-text h3 {
+	    font-size: 23px;
+	}
+    .event-content .event-text p {
+	    padding: 15px 9px;
+	}
+	.explore .explore-text h1 {
+		font-size: 41px;
+	}
+	.explore .explore-text p {
+	padding: 0 23%;
+	}
+    .tours-inner h1 {
+		font-size: 21px;
+		line-height: 33px;
+	}
+	.tours-inner p {
+
+	    padding-right: 23px;
+	}
+	nav ul li .btn {
+    padding: 3px 12px;}
+    
+    
+    
+  }
+  @media  (max-width: 575px) {
+    .container{
+            max-width: 480px;
+    		margin: auto;
+    	}
+	.header-section .logo h1 {
+    	font-size: 14px;
+    }
+    .header-section .logo h3 {
+    	font-size: 8px;
+    }
+    nav ul li .btn {
+    	padding: 3px 12px;}
+    nav ul li a {
+    	margin: 0 4px;
+    	font-size: 13px;
+	}
+	.hero-area h1 {
+    	font-size: 35px;}
+    .test h3 {
+    	padding: 0 30px;}
+    .event-content .event-text h3 {
+    	font-size: 15px;
+    }
+    .event-content .event-text p {
+    	padding: 15px 29px;
+	}
+	.event .text h2 {
+    	font-size: 30px;}
+	.event-content .event-btn {
+
+	    font-size: 11px;
+	    letter-spacing: 2px;
+	    padding: 1px 18px; 
+  	}
+  	.event-content .event-btn i {
+	    font-size: 23px;
+	    vertical-align: middle;
+	}
+	.explore .explore-text h1 {
+		font-size: 30px;
+		margin: 0;
+  	}
+	.explore .explore-text p {
+	padding: 0 23%;
+	}
+    .tours-inner h1 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.tours-inner p {
+
+		padding-right: 22px;
+
+		font-size: 10px;
+
+		padding: 0;
+	}
+	
+  	.tours-inner .tours-btn {
+  	    padding: 7px 14px;
+        font-size: 7px;
+  	}
+  	
+   
+  i{
+  	font-size: 10px;
+  	vertical-align: middle;
+  }
+  footer p {
+    font-size: 11px;}
+    footer .coprright {
+   
+    font-size: 11px;
+    
+}
+
+
+  @media  (max-width: 400px) {
+    
+        .container{
+            max-width: 350px;
+            margin: auto;
+     }
+    	.header-section .logo h1 {
+    		font-size: 11px;
+    }
+    .header-section .logo h3 {
+    	font-size: 5px;
+    }
+    nav ul li .btn {
+    	padding: 3px 12px;}
+    nav ul li a {
+	    margin: 0px 3px;
+	    font-size: 9px;
+	}
+.hero-area h1 {
+   	 font-size: 23px;
+    }
+  .hero-area h5 {
+    font-size: 14px;
+}
+.hero-area .line {
+    margin: 7px auto;
+    width: 11%;
+}
+.hero-area .header-btn {
+    padding: 7px 17px;}
+    .test {
+    padding: 26px 0;
+}
+    .test h3 {
+   		 padding: 0 30px;}
+    .event-content .event-text h3 {
+    	font-size: 12px;
+    }
+    .event-content .event-text p {
+    	padding: 15px 28px;
+	}
+	.event .text h2 {
+	    font-size: 25px;
+    }
+	.explore .explore-text h1 {
+		font-size: 22px;
+		margin: 0;
+  	}
+	.explore .explore-text p {
+		padding: 0 23%;
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.explore .explore-text .explore-btn {
+
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-top: 30px;
+    padding: 0px 10px;
+}
+.explore .explore-text .explore-btn i {
+    font-size: 20px;}
+    .tours {
+    padding: 15px 0;
+}
+.explore .explore-text {
+
+    padding-top: 3%;}
+    .event {
+    padding: 14px 0 0px;
+}
+.tours-inner h1 {
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.tours-inner p {
+
+padding-right: 22px;
+
+font-size: 7px;
+
+padding: 0;
+
+}
+.middle-img .img-1 {
+    padding: 7px 0px;
+}
+.right-img .img-3 {
+    padding: 7px 0px;
+}
+
+element.style {
+}
+.middle-img {
+}
+.col-3 {
+
+    padding: 6px;}
+    
+	.event-content .event-btn {
+
+		font-size: 9px;
+
+		letter-spacing: 1px;
+
+		padding: 1px 4px;
+
+		margin: 0;
+
+	}
+  .tours-inner .tours-btn {
+  	    padding: 3px 8px;
+  	    font-size: 5px;
+  }
+  .tours-btn i{
+  	display: none;
+  }
+  .event-content .event-btn i {
+	    font-size: 13px;
+	    vertical-align: middle;
+	}
+   
+  i{
+  	font-size: 10px;
+  	vertical-align: middle;
+  }
+  footer p {
+    font-size: 9px;
+    }
+    footer .coprright {
+   
+font-size: 8px;
+}
+    
+  }
+  
+
+
+    
+    
